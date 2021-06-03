@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Guitar Reviews</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Guitar Reviews 2021</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.category}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy wcci 2021</small>
+</footer>
+
+</body>
+</html>

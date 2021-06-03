@@ -2,22 +2,26 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="${reviewModel.name}">A review</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./images/style.css">
 </head>
+
 <body>
 
+    <div class="container3">
 <header>
+    <p><a href="/reviews">Reviews</a></p>
     <h1 th:text="${reviewModel.name}">A Review</h1>
 </header>
-
+    </div>
+    <div class="container4">
 <main>
     <ul>
-        <p><a href="/reviews">Reviews</a></p>
+        <li th:text="${reviewModel.listPrice}"></li>
 
-        <li th:text="${reviewModel.name}"></li>
     </ul>
-    <h2 th:text="${reviewModel.description}"></h2>
+    <p class="descriptions" th:text="${reviewModel.description}"></p>
 </main>
+    </div>
 
 <footer>
     <small>&copy wcci 2021</small>

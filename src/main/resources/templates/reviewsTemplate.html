@@ -2,20 +2,29 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Guitar Reviews</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./images/style.css">
 </head>
 <body>
-
+    <div class="container1">
 <header>
-    <h1>Guitar Reviews 2021</h1>
-</header>
 
+    <div class = "reviews-title">
+    <h1>Guitar Reviews 2021</h1>
+    </div>
+
+    <div>
+    <img class="main-image" src="images/Guitars.jpg" alt="picture of guitars hanging on a wall">
+    </div>
+
+</header>
+    </div>
+    <div class="container2">
 <main>
     <ul>
         <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.category}"></a></li>
     </ul>
 </main>
-
+    </div>
 <footer>
     <small>&copy wcci 2021</small>
 </footer>

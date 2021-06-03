@@ -14,6 +14,16 @@ body{
     -moz-box-shadow: 14px 10px 5px 6px rgba(0,0,0,0.75);
 }
 
+.other-images {
+    max-width: 20%;
+     height: auto;
+     display:block;
+     margin-left: 70%;
+    box-shadow: 14px 10px 5px 6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 14px 10px 5px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 10px 5px 6px rgba(0,0,0,0.75);
+}
+
 .container1{
     display: flex;
     flex-direction: column;
@@ -34,10 +44,8 @@ body{
 }
 
 .descriptions{
-    text-align: center;
-    margin: 1%;
-    border: 10%;
-    padding: 10%;
+    width: 500px;
+    margin: auto;
 }
 
 ul li {

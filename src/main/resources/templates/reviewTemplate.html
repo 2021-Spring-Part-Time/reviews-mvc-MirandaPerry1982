@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="${reviewModel.name}">A review</title>
-    <link rel="stylesheet" type="text/css" href="./images/style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
@@ -18,7 +18,8 @@
     <ul>
         <li th:text="${reviewModel.listPrice}"></li>
 
-    </ul>
+
+    <img class="other-images" th:src="${reviewModel.image}"/>
     <p class="descriptions" th:text="${reviewModel.description}"></p>
 </main>
     </div>
